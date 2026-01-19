@@ -20,13 +20,13 @@ These outcomes are used to define the target variable for credit risk prediction
 The project uses large CSV datasets for training and evaluation. Due to their size, datasets are managed using Git Large File Storage (Git LFS), while all other files are stored using standard Git.
 
 ## Project Structure
-- data/
-raw/ – original datasets  
-processed/ – cleaned and processed data
-- notebooks/ – exploratory data analysis and model development  
-- src/ – preprocessing and modeling code  
-- README.md  
-- .gitattributes – Git LFS configuration  
+- `data/raw/` – original datasets  
+- `data/processed/` – cleaned and processed data  
+- `notebooks/` – exploratory data analysis and model development  
+- `src/` – preprocessing and modeling code  
+- `README.md`  
+- `.gitattributes` – Git LFS configuration
+
 
 ## Setup
 git lfs install  

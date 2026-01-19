@@ -22,7 +22,6 @@ The project uses large CSV datasets for training and evaluation. Due to their si
 ## Project Structure
 - `data/raw/` – original datasets  
 - `data/processed/` – cleaned and processed data  
-- `notebooks/` – exploratory data analysis and model development  
 - `src/` – preprocessing and modeling code  
 - `README.md`  
 - `.gitattributes` – Git LFS configuration

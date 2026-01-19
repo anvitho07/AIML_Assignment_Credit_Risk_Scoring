@@ -1,20 +1,42 @@
-# AIML_Assignment_Credit_Risk_Scoring
-**1. Introduction**
-LendingClub is a large US company that connects people who want to lend money with people who need to borrow it (peer-to-peer lending). This case study shows how we can use data to solve a real business problem: How do we stop the company from losing money on bad loans?
+# AIML_Assignment - Credit Risk Scoring
 
-**2. How the Business Works**
- When a person applies for a loan, the company has to make a tough decision: Approve or Reject.
+## Project Overview
+This project focuses on credit risk scoring using historical loan data from LendingClub, a US-based peer-to-peer lending platform. The aim is to support loan approval decisions and reduce financial losses caused by borrower default by applying data analysis and machine learning techniques.
 
-**There are two main risks:**
+## Business Context
+When a customer applies for a loan, the company must decide whether to approve or reject the application. This decision involves two key risks:
+- Rejecting a good applicant leads to a loss of potential customers and missed profit.
+- Approving a bad applicant increases the risk of default and financial loss.
 
-**If you Reject a good applicant:** The company loses a customer and misses out on profit.
+## Loan Outcomes
+After a loan is approved, it can result in one of the following outcomes:
+- Fully Paid: the borrower repaid the loan completely.
+- Current: the borrower is making payments on time.
+- Charged-off: the borrower defaulted and stopped making payments.
 
-**If you Approve a bad applicant:** The applicant might never pay the money back. This causes a financial loss.
+These outcomes are used to define the target variable for credit risk prediction.
 
-**Understanding Loan Status:** When a loan is approved, three things can happen:
+## Dataset
+The project uses large CSV datasets for training and evaluation. Due to their size, datasets are managed using Git Large File Storage (Git LFS), while all other files are stored using standard Git.
 
-**Fully Paid:** The person paid back all the money. (This is good).
+## Project Structure
+data/
+- raw/ – original datasets  
+- processed/ – cleaned and processed data  
+notebooks/ – exploratory data analysis and model development  
+src/ – preprocessing and modeling code  
+README.md  
+.gitattributes – Git LFS configuration  
 
-**Current:** The person is still making payments on time.
+## Setup
+git lfs install  
+git clone https://github.com/anvitho07/AIML_Assignment_Credit_Risk_Scoring.git  
+cd AIML_Assignment_Credit_Risk_Scoring  
 
-**Charged-off:** The person stopped paying. They have defaulted. (This is bad).
+## Technologies Used
+Python, Pandas, NumPy, Scikit-learn, Jupyter Notebook, Git, Git LFS
+
+## Author
+Anvith Amin
+MSc Industrial Engineering & International Management  
+Specialization: Data Science in Business
